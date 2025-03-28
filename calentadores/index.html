@@ -1,0 +1,170 @@
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+        crossorigin="anonymous">
+<body>
+    <div class="container-fluid bg-page" id="form">
+        <form onsubmit="return false">
+            <div class="container ak-section">
+                <div class="row bg-form">
+                    <div class="col-md-5">
+                        <div class="d-md-flex">
+                            <div class="cont-icon-title">
+                                <i class="alk-icon-calentador"></i>
+                            </div>
+                            <div class="cont-tilte">
+                                <p class="text">Descubre el calentador</p>
+                                <h1 class="title-page">ideal para tu hogar</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 cont-form">
+                        <div class="row ">
+                            <div class="question">
+                                <div class="d-sm-flex d-md-flex"><span class="number"><img class="img-number"
+                                            src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/media-transversal/numbers/uno.svg"
+                                            alt="1"></span>
+                                    <div class="float-error-input">
+                                        <p class="text"> ¿Cuántas llaves de agua caliente
+                                            usarás
+                                            al mismo tiempo?
+                                            <br>
+                                            <span>Máximo 3 llaves al mismo tiempo.</span>
+                                        </p>
+                                        <div class="cont-input-llaves row">
+                                            <button id="btn-resta" class="btn-llaves"><i
+                                                    class="alk-icon-menos btn-key"></i>
+                                            </button>
+                                            <div class="cont-llave d-flex">
+                                                <input value="1" class="input cont-llaves" readonly="true" id="llaves">
+                                                <img class="img img-responsive img-llave"
+                                                    src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/Recomendadores/calentadores/llave_calentadores.svg"
+                                                    alt="ilustración llave">
+                                            </div>
+                                            <button id="btn-suma" class="btn-llaves"><i
+                                                    class="alk-icon-plus btn-key"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont-select row">
+                            <div class="question">
+                                <div class="d-sm-flex d-md-flex"><span class="number"><img class="img-number"
+                                            src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/media-transversal/numbers/dos.svg"
+                                            alt="2"></span>
+                                    <div class="float-error-input">
+                                        <p class="text"> ¿En qué ciudad instalarás
+                                            el
+                                            calentador?</p>
+                                        <span>Escribe o selecciona un departamento y
+                                            un municipio.</span>
+                                        <div class="cont-question row">
+                                            <div class="col-md-6 mb-4">
+                                                <label class="float-select--label js-float-select-label active"
+                                                    for="dep">Departamento</label>
+                                                <input class="form-control" name="dep" list="deptos" id="input-dep"
+                                                    autocomplete="off">
+                                                <datalist id="deptos">
+                                                </datalist>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label class="float-select--label js-float-select-label active"
+                                                    for="mun">Municipio</label>
+                                                <input class="form-control" name="mun" disabled required list="mun"
+                                                    id="input-mun" autocomplete="off">
+                                                <datalist id="mun">
+                                                </datalist>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cont-cards row">
+                            <div class="question">
+                                <div class=" d-sm-flex d-md-flex"><span class="number"><img class="img-number"
+                                            src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/media-transversal/numbers/tres.svg"
+                                            alt="3"></span>
+                                    <div class="float-error-input">
+                                        <p class="text">
+                                            ¿El lugar dónde instalarás
+                                            el
+                                            calentador cuenta con evacuación al exterior de la vivienda?
+                                        </p>
+                                        <span>
+                                            El lugar de evacuación de gases garantiza una respiración tranquila y
+                                            sin
+                                            afectaciones. Es crucial conocer cómo estos gases abandonarán tu
+                                            vivienda.</span>
+                                        <div class="cont-question row">
+                                            <div class="col-md-6 cont-rad">
+                                                <input type="radio" name="question_3" value="1" id="1">
+                                                <label class="label-question" for="1">
+                                                    <div class="card op-3" id="1">
+                                                        <div class="cont-check">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="cont-txt-card">
+                                                            <p class="text txt-card">
+                                                                Apartamento con ducto comunal de evacuación
+                                                            </p>
+                                                        </div>
+                                                        <div class="cont-info">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-6 cont-rad">
+                                                <input type="radio" name="question_3" value="2" id="2">
+                                                <label class="label-question" for="2">
+                                                    <div class="card op-3" id="2">
+                                                        <div class="cont-check">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="cont-txt-card">
+                                                            <p class="text txt-card">Casa con ducto propio de
+                                                                evacuación
+                                                            </p>
+                                                        </div>
+                                                        <div class="cont-info">
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="button-primary" id="search">
+                                Buscar el calentador ideal para mi
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+        </form>
+        <div class="ak-section">
+            <div class="row">
+                <div class="col-md-12" id="cont-alert">
+
+                </div>
+                <div class="col-md-12 px-sm-0">
+                    <div class="swiper" style="display: none;" id="swiper">
+                        <div class="swiper-wrapper" id="products"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
